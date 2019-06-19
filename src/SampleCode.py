@@ -3,8 +3,13 @@ from src.ExcelProcess import MSExcel
 
 
 ms_excel = MSExcel("sales.xlsx")
-ms_excel.open_file(True)
-print(ms_excel.get_row_data())
+ms_excel.open_file()
+# for i in range(1, ms_excel.get_max_row() + 1):
+#     print(ms_excel.get_row_data(i))
+#
+# print(ms_excel.get_col_data(1))
+print(ms_excel.get_cell_black("A3", "E6"))
+ms_excel.save_new_excel("123.xlsx", "sales.xlsx", "123")
 
 def test_code():
 
