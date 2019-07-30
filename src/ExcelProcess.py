@@ -3,8 +3,8 @@ import openpyxl
 from openpyxl.utils import get_column_letter, column_index_from_string
 
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(levelname)s : %(message)s')
+# logging.basicConfig(level=logging.DEBUG,
+#                     format='%(asctime)s - %(levelname)s : %(message)s')
 
 
 class MSExcel:
@@ -54,7 +54,7 @@ class MSExcel:
             txt.append(cell.value)
         return txt
 
-    def get_cell_black(self,parm_start,parm_end):
+    def get_cell_block(self, parm_start, parm_end):
         txt_list_array = []
         for row in self.__active_sheet[parm_start:parm_end]:
             txt_list = []

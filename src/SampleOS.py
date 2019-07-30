@@ -4,7 +4,7 @@ import zipfile
 import logging
 
 # logging.disable(logging.DEBUG)  # 停用logging
-logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s : %(message)s")
+# logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s : %(message)s")
 # logging.basicConfig(filename="debugLOG.txt",level=logging.DEBUG, format="%(asctime)s - %(levelname)s : %(message)s")    # log 輸出至檔案
 
 

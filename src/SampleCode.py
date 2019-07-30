@@ -1,15 +1,20 @@
 import time
+import logging
 from src.ExcelProcess import MSExcel
+from src.Utility import ToolFile
 
 
-ms_excel = MSExcel("sales.xlsx")
+file_name = "resource/sales.xlsx"
+ms_excel = MSExcel(file_name)
 ms_excel.open_file()
 # for i in range(1, ms_excel.get_max_row() + 1):
 #     print(ms_excel.get_row_data(i))
 #
 # print(ms_excel.get_col_data(1))
+
 print(ms_excel.get_cell_black("A3", "E6"))
-ms_excel.save_new_excel("123.xlsx", "sales.xlsx", "123")
+# ms_excel.save_new_excel("123.xlsx", "sales.xlsx", "123")
+
 
 def test_code():
 
