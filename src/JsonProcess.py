@@ -43,7 +43,7 @@ worldMap.title = "World Population in 2000"
 # worldMap.add("ch", ["tw", "cn"])
 # worldMap.add("ch", ["tw"])
 # worldMap.add("ch", ["cn"])
-# worldMap.add("tw", {"tw": 1234, "cn": 12, "jp": 999})
+# worldMap.add("tw", {"tw": 1234, "cn": 12, "jp": 99
 worldMap.add("Year 2000 大於 1億", dict_data1)
 worldMap.add("Year 2000 小於", dict_data2)
 worldMap.render_to_file("out.svg")
